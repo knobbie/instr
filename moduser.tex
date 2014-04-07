@@ -3,11 +3,10 @@
 	Systemet starter transportbåndene automatisk, oppover fra det nederste, for å unngå oppsamling av leire. Bare moduler i ekstern-modus som ikke er avhengige av en modul i intern-modus vil bli startet. Gruppestart settes i operatørpanelet.
 
 \subsection{Gruppestopp}
-	Systemet vil stoppe transportbåndene nedover fra øverste bånd for å forhindre opphoping av leire. Både bånd i ekstern- og intern-modus vil stoppes. Gruppestopp settes igjennom settes i operatørpanelet.
+	Systemet vil stoppe transportbåndene nedover fra øverste bånd for å forhindre opphoping av leire. Både bånd i ekstern- og intern-modus vil stoppes. Gruppestopp settes i operatørpanelet.
 
 \subsection{Intern/Ekstern}
 	Alle motor moduler kan settes i ekstern eller intern modus. Når en motor står i ekstern modus kan den styres av overordnede moduler, som gruppestart og gruppestopp. Dette gjelder ikke HS1209B som kun opereres i internmodus, eller HS1207 som i automodus kun kan starte når 1209A er i drift, og i manuellmodus startes og stoppes ved en impulsknapp. I intern modus kan modulene kun styres gjennom motorens lokale manøverpanel eller operatørvinduet. Intern og Ekstern modus settes for hver modul.
 
 \subsection{Auto/Manuell}
-	Auto-modus er overordnet ekstern modus hvor hele systemet styres gjennom operatørpanelet. Det er da ikke mulig å styre modulene direkte.
-	I manuell modus styres hver modul etter den lokale implementasjonen og direkte styring. Det vil da være ganske lik en total intern-modus.
+	Auto-modus er overordnet ekstern modus hvor hele systemet styres gjennom operatørpanelet. Det er da ikke mulig å styre modulene direkte med mindre de eksplisitt er satt i internmodus. I manuell-modus kan hver modul styres fra det lokalt panel, etter de krav som er satt for modulen. Det vil da være ganske lik en total intern-modus. Detsom en modul settes til intern- eller ekstern-modus vil det overstyre auto/manuell modus.
